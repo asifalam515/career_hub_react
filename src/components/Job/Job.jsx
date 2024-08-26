@@ -1,4 +1,7 @@
 import React from "react";
+import { BiDollar } from "react-icons/bi";
+
+import { TiLocation } from "react-icons/ti";
 
 const Job = ({ job }) => {
   const {
@@ -30,6 +33,18 @@ const Job = ({ job }) => {
             {" "}
             {job_type}{" "}
           </button>
+        </div>
+        <div className="mt-4">
+          <h2 className="flex">
+            {" "}
+            <TiLocation className="text-2xl mr-2" />
+            {location}
+          </h2>
+          <h2 className="flex">
+            {" "}
+            <BiDollar className="text-2xl mr-2" />
+            {salary}
+          </h2>
         </div>
         <div className="card-actions justify-start">
           <button className="btn btn-primary">View Details</button>
